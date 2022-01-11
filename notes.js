@@ -15,6 +15,14 @@ const notes = [
     }
 ]
 
+const newNote = {
+    id: 3,
+    subject: "I practiced the .push() method. of adding an object to an array of objects.",
+    date: "1/11/22",
+    feeling: "Pretty good about it",
+    timeSpent: "45minutes"
+}
+notes.push(newNote)
 console.log(notes)
 
 // I have an array called -notes- with two objects inside. I have an integer id property.
