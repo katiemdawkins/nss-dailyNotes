@@ -12,18 +12,31 @@ const notes = [
         date: "1/11/22",
         feeling: "Need to read all directions to make sure I'm doing things correctly.",
         timeSpent: "a few minutes",
-    }
+    },
 ]
 
 const newNote = {
     id: 3,
     subject: "I practiced the .push() method. of adding an object to an array of objects.",
     date: "1/11/22",
-    feeling: "Pretty good about it",
+    feeling: "great",
     timeSpent: "45minutes"
 }
 notes.push(newNote)
-console.log(notes)
+//console.log(notes)
+
+
+const searchTerm = "great"
+
+for (display of notes) {
+    if (display.feeling === searchTerm)
+    console.log((`Note ${display.id}
+    on ${display.date} 
+    ${display.subject}.
+    I spent ${display.timeSpent} working on it.
+    I felt ${display.feeling}
+    `))
+}
 
 // I have an array called -notes- with two objects inside. I have an integer id property.
 //String subject, date, feeling, and timeSpent properties.
